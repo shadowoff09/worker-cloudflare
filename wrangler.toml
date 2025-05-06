@@ -1,3 +1,16 @@
+name = "steset"
+compatibility_date = "2025-05-06"
+
+[build]
+command = "npx esbuild src/client/index.tsx --bundle --outdir=public/dist --splitting --sourcemap --format=esm"
+
+[site]
+bucket = "./public"
+
+[[durable_objects.classes]]
+name = "Globe"
+class_name = "Globe"
+
 [[migrations]]
-tag = "v1" # podes mudar o nome da versão
-new_sqlite_classes = ["Globe"] # substitui pelo nome da tua classe
+tag = "v1"
+new_classes = ["Globe"]
