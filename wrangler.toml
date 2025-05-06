@@ -1,0 +1,3 @@
+[[migrations]]
+tag = "v1" # podes mudar o nome da versão
+new_sqlite_classes = ["Globe"] # substitui pelo nome da tua classe
